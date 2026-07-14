@@ -10,7 +10,7 @@ app.use(cookieParser())
 app.use(cors({
     origin: [
         "http://localhost:5173",
-        "https://your-vercel-app.vercel.app"
+        "https://prep-pilot-delta.vercel.app"
     ],
     credentials: true
 }))
