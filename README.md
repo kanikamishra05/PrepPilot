@@ -4,7 +4,7 @@
 
 ### AI-Powered Interview Preparation Platform
 
-Prepare smarter with AI-generated interview questions, personalized interview sessions, and real-time practice powered by Google Gemini.
+Prepare smarter with AI-generated interview questions, personalized interview sessions, and real-time practice powered by Groq Cloud.
 
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 
@@ -14,7 +14,7 @@ Prepare smarter with AI-generated interview questions, personalized interview se
 
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 
-![Google Gemini](https://img.shields.io/badge/Google-Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-Llama_3.3_70B-black?style=for-the-badge)
 
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
@@ -26,7 +26,7 @@ Prepare smarter with AI-generated interview questions, personalized interview se
 
 **PrepPilot** is a full-stack AI-powered interview preparation platform designed to help students and professionals practice technical interviews more effectively.
 
-The platform leverages **Google Gemini AI** to generate personalized interview questions and interactive interview sessions while securely managing user authentication and interview data.
+The platform leverages **Groq Cloud* to generate personalized interview questions and interactive interview sessions while securely managing user authentication and interview data.
 
 Whether you're preparing for software engineering internships or full-time roles, PrepPilot provides an intelligent environment to improve interview performance.
 
@@ -34,7 +34,7 @@ Whether you're preparing for software engineering internships or full-time roles
 
 # ✨ Features
 
-- 🤖 AI-generated interview questions using Google Gemini
+- 🤖 AI-generated interview questions using Groq Cloud
 - 🔐 Secure User Authentication
 - 👤 User Registration & Login
 - 💬 Interactive AI Interview Sessions
@@ -65,7 +65,7 @@ Whether you're preparing for software engineering internships or full-time roles
 
 ## AI Integration
 
-- Google Gemini API
+- Groq Cloud
 
 ## Other Libraries
 
@@ -125,7 +125,7 @@ Example:
 ```env
 MONGO_URI=your_mongodb_connection_string
 
-GOOGLE_GENAI_API_KEY=your_google_genai_api_key
+GROQ_API_KEY=your_Groq_api_key
 
 PORT=3000
 ```
@@ -157,7 +157,7 @@ The backend requires the following environment variables.
 | Variable | Description |
 |----------|-------------|
 | MONGO_URI | MongoDB Connection String |
-| GOOGLE_GENAI_API_KEY | Google Gemini API Key |
+| GROQ_API_KEY | Groq API Key |
 | PORT | Backend Port |
 
 ---
@@ -179,7 +179,7 @@ http://localhost:5173
 ---
 
 # 🚀 Future Enhancements
-
+-📄 Download Resume (currently being optimized for     cloud deployment)
 - 🎙 Voice-based Mock Interviews
 - 📊 Interview Analytics Dashboard
 - 📈 Progress Tracking
@@ -197,13 +197,13 @@ http://localhost:5173
 Frontend
 
 ```
-Coming Soon
+https://prep-pilot-delta.vercel.app
 ```
 
 Backend
 
 ```
-Coming Soon
+https://preppilot-yu6y.onrender.com
 ```
 
 ---
