@@ -6,10 +6,25 @@ const ai = new GoogleGenAI({
 });
 
 async function main() {
-  const response = await ai.models.generateContent({
-    model: "models/gemini-3.5-flash",
-    contents: "Reply with only the word Hello",
-  });
+    const response = await client.chat.completions.create({
+    model: "llama-3.3-70b-versatile",
+    messages: [
+        {
+            role: "system",
+            content: "You are an expert interview preparation assistant. Always return ONLY valid JSON."
+        },
+        {
+            role: "user",
+            content: prompt
+        }
+    ],
+    temperature: 0.4,
+    response_format: {
+        type: "json_object"
+    }
+});
+
+   return JSON.parse(response.choices[0].message.content);
 
   console.log(response.text);
 }
