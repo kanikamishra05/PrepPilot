@@ -3,6 +3,8 @@ const authMiddleware = require("../middlewares/auth.middleware")
 const interviewController = require("../controllers/interview.controller")
 const upload = require("../middlewares/file.middleware")
 
+console.log("✅ interview.routes.js loaded");
+
 const interviewRouter = express.Router()
 
 
