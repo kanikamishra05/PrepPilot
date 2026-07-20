@@ -35,6 +35,8 @@ Whether you're preparing for software engineering internships or full-time roles
 # ✨ Features
 
 - 🤖 AI-generated interview questions using Groq Cloud
+- 📄 AI-Generated Resume PDF Downloader (Fully integrated with Puppeteer on Render)
+- 🐳 Docker Support for cloud deployment containerization
 - 🔐 Secure User Authentication
 - 👤 User Registration & Login
 - 💬 Interactive AI Interview Sessions
@@ -62,10 +64,12 @@ Whether you're preparing for software engineering internships or full-time roles
 - Express.js
 - MongoDB
 - Mongoose
+- Puppeteer (for PDF generation)
 
 ## AI Integration
 
 - Groq Cloud
+- Groq Cloud (Llama 3.3 70B Model)
 
 ## Other Libraries
 
@@ -83,6 +87,7 @@ PrepPilot
 │
 ├── Backend
 │   ├── src
+    ├── Dockerfile
 │   ├── server.js
 │   ├── package.json
 │   └── .env.example
@@ -112,28 +117,35 @@ cd PrepPilot
 
 # Backend Setup
 
+### Option 1: Standard Node.js Setup
 ```bash
 cd Backend
 
 npm install
 ```
 
-Create a `.env` file inside the Backend folder.
+Create a `.env` file inside the Backend folder:
 
-Example:
 
 ```env
 MONGO_URI=your_mongodb_connection_string
-
 GROQ_API_KEY=your_Groq_api_key
-
 PORT=3000
+PUPPETEER_CACHE_DIR=./.cache/puppeteer # (Optional) Local cache for chrome
 ```
 
-Start the backend server
+Start the backend server:
 
 ```bash
 npm run dev
+```
+
+### Option 2: Docker Setup
+Build and run using Docker:
+```bash
+cd Backend
+docker build -t preppilot-backend .
+docker run -p 3000:3000 --env-file .env preppilot-backend
 ```
 
 ---
@@ -159,6 +171,8 @@ The backend requires the following environment variables.
 | MONGO_URI | MongoDB Connection String |
 | GROQ_API_KEY | Groq API Key |
 | PORT | Backend Port |
+|PUPPETEER_CACHE_DIR |Path to cache Puppeteer Chrome executable (required for Render Node environments: 
+`/opt/render/project/src/Backend/.cache/puppeteer`) |
 
 ---
 
@@ -179,7 +193,6 @@ http://localhost:5173
 ---
 
 # 🚀 Future Enhancements
--📄 Download Resume (currently being optimized for     cloud deployment)
 - 🎙 Voice-based Mock Interviews
 - 📊 Interview Analytics Dashboard
 - 📈 Progress Tracking
@@ -187,8 +200,6 @@ http://localhost:5173
 - 📧 Email Verification
 - 🔄 Password Reset
 - 🌍 Multi-language Support
-- ☁ Cloud Deployment
-- 🐳 Docker Support
 
 ---
 
