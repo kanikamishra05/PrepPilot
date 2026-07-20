@@ -166,13 +166,18 @@ npm run dev
 
 The backend requires the following environment variables.
 
-| Variable | Description |
+<!-- | Variable | Description |
 |----------|-------------|
 | MONGO_URI | MongoDB Connection String |
 | GROQ_API_KEY | Groq API Key |
 | PORT | Backend Port |
 |PUPPETEER_CACHE_DIR |Path to cache Puppeteer Chrome executable (required for Render Node environments: 
-`/opt/render/project/src/Backend/.cache/puppeteer`) |
+`/opt/render/project/src/Backend/.cache/puppeteer`) | -->
+* **`MONGO_URI`**: MongoDB Connection String
+* **`GROQ_API_KEY`**: Groq API Key
+* **`PORT`**: Backend Port (defaults to `3000`)
+* **`PUPPETEER_CACHE_DIR`**: Path to cache the Puppeteer Chrome executable. 
+  *(Required for Render Node environments: `/opt/render/project/src/Backend/.cache/puppeteer`)*
 
 ---
 
