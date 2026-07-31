@@ -247,4 +247,4 @@ It helps others discover the project and motivates future improvements.
 
 # 📄 License
 
-This project is developed for educational and portfolio purposes.
+This project was developed for educational and portfolio purposes.
